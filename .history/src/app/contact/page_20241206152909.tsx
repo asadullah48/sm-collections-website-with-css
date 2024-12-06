@@ -28,7 +28,7 @@ const Contact = () => {
               target="blank">
               <FaFacebookSquare className="icon" /></Link>
               
-              <Link href="https://www.youtube.com/@asadullahshafique4261">
+              <Link href="">
               <FaYoutube className="icon"/>
               </Link>
 

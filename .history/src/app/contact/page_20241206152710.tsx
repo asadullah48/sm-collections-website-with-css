@@ -1,7 +1,7 @@
 import React from 'react';
 import "@/style/contact.css";
 import Link from 'next/link';
-import { FaFacebookSquare, FaGithub, FaInstagramSquare, FaLinkedin, FaTwitterSquare, FaYoutube } from 'react-icons/fa';
+import { FaFacebookSquare, FaGithub, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -28,8 +28,8 @@ const Contact = () => {
               target="blank">
               <FaFacebookSquare className="icon" /></Link>
               
-              <Link href="https://www.youtube.com/@asadullahshafique4261">
-              <FaYoutube className="icon"/>
+              <Link href="https://twitter.com">
+              <FaTwitterSquare className="icon"/>
               </Link>
 
               <Link href="https://instagram.com">

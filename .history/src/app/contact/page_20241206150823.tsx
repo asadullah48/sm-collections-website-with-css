@@ -1,7 +1,7 @@
 import React from 'react';
 import "@/style/contact.css";
 import Link from 'next/link';
-import { FaFacebookSquare, FaGithub, FaInstagramSquare, FaLinkedin, FaTwitterSquare, FaYoutube } from 'react-icons/fa';
+import { FaFacebookSquare, FaGithub, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -13,23 +13,23 @@ const Contact = () => {
       <section className="contact-card">
         <div className="contact-info">
           <h2>Contact Information</h2>
-          <p><strong>Email:</strong> asadullahshafique@hotmail.com</p>
-          <p><strong>Phone:</strong> +92 3213771445</p>
+          <p><strong>Email:</strong> asadullahshafique@hotmail</p>
+          <p><strong>Phone:</strong> +92 3168596692</p>
           <p><strong>Address:</strong> Karachi, Sindh, Pakistan</p>
 
           <div className="social-icons">
-              < Link href="https://www.linkedin.com/in/asadullah-shafique-a00679325/"
+              < Link href="https://linkedin.com/in/samra-shaikh-7164142b6"
               target="blank"> <FaLinkedin className="icon"/></Link>
               
-             <Link href="https://github.com/asadullah48" target="blank">
+             <Link href="https://github.com/Samrasahaikh" target="blank">
               <FaGithub className="icon"/></Link>
 
-             <Link href="https://web.facebook.com/asadullah.shafique/"
+             <Link href="https://facebook.com/samra.shaikh.14289"
               target="blank">
               <FaFacebookSquare className="icon" /></Link>
               
-              <Link href="https://www.youtube.com/@asadullahshafique4261">
-              <FaYoutube className="icon"/>
+              <Link href="https://twitter.com">
+              <FaTwitterSquare className="icon"/>
               </Link>
 
               <Link href="https://instagram.com">
