@@ -1,0 +1,240 @@
+/* DetailPage Custom Styles */
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: white;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #6b7280; /* Gray-500 */
+  flex-wrap: wrap; /* Ensure that breadcrumb items wrap on smaller screens */
+}
+
+.breadcrumb-link {
+  cursor: pointer;
+  color: inherit;
+}
+
+.breadcrumb-link:hover {
+  color: #06baec;
+}
+
+.breadcrumb-separator {
+  width: 30px;
+  height: 2px;
+  background-color: #9ca3af; /* Gray-400 */
+}
+
+/* Detail Grid */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .detail-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .detail-grid {
+    grid-template-columns: 1fr 1fr; /* Adjust for larger screens */
+    gap: 6rem;
+  }
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Product Information */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-rating {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  color: #046883;
+}
+
+.product-rating-text {
+  margin-left: 0.5rem;
+  color: #9ca3af;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.product-rating-text:hover {
+  color: #06baec;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #046883;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #046883;
+}
+
+.product-description {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.product-stock {
+  color: #046883;
+  font-size: 14px;
+}
+
+/* Buttons */
+.add-to-cart-btn {
+  text-transform: uppercase;
+  background-color: #046883;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  width: 100%; /* Ensures full width on all screen sizes */
+  max-width: 250px; /* Prevents the button from becoming too wide */
+  margin: 0 auto; /* Centers the button horizontally */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: transparent;
+  border: 2px solid #046883;
+  color: #046883;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.action-buttons div {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Divider */
+.divider {
+  width: 30px;
+  height: 2px;
+  background-color: #9ca3af; /* Gray-400 */
+}
+
+/* Product Details */
+.product-meta {
+  font-size: 14px;
+}
+
+.product-meta .tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Social Sharing */
+.social-share {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 20px;
+  color: #046883;
+  cursor: pointer;
+}
+
+.social-icons .icon:hover {
+  color: #06baec;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .detail-grid {
+    grid-template-columns: 1fr; /* Stack the grid items on smaller screens */
+    gap: 2rem;
+  }
+
+  .product-info {
+    padding: 1rem;
+  }
+
+  .product-title {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+
+  .product-price {
+    font-size: 1.125rem; /* Smaller price text on mobile */
+  }
+
+  .add-to-cart-btn {
+    width: 100%; /* Ensures the button stays full-width on mobile */
+    max-width: 100%; /* Button width adjustment */
+  }
+
+  .action-buttons {
+    flex-direction: column; /* Stack buttons on smaller screens */
+    gap: 1rem;
+  }
+
+  .social-share {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .breadcrumb {
+    flex-direction: column; /* Stack breadcrumb items on mobile */
+  }
+
+  .product-description {
+    font-size: 16px; /* Adjust description font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-title {
+    font-size: 1.25rem; /* Even smaller title for very small screens */
+  }
+
+  .product-price {
+    font-size: 1rem; /* Smaller price text for smaller screens */
+  }
+
+  .product-description {
+    font-size: 12px; /* Adjust description text for small screens */
+  }
+}

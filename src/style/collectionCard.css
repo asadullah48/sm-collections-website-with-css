@@ -1,0 +1,57 @@
+/* CategoryCard.css */
+
+/* Container for the card */
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Vertical spacing between image and text */
+  }
+  
+  /* Image styling for category card */
+  .category-image {
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .category-image:hover {
+    transform: scale(1.1); /* Hover effect to scale the image */
+  }
+  
+  @media (min-width: 768px) {
+    /* For larger screens, increase the border size */
+    .category-image {
+      border-width: 8px;
+    }
+  }
+  
+  /* Category information text styling */
+  .category-info {
+    text-align: center;
+  }
+  
+  /* Category name styling */
+  .category-type {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  @media (min-width: 768px) {
+    .category-type {
+      font-size: 18px;
+    }
+  }
+  
+  /* Category quantity description styling */
+  .category-quantity {
+    color: white; /* Text gray */
+    font-size: 12px;
+  }
+  
+  @media (min-width: 768px) {
+    .category-quantity {
+      font-size: 14px;
+    }
+  }
+  

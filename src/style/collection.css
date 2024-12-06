@@ -1,0 +1,59 @@
+/* Category.css */
+
+/* Container for the entire category section */
+.category-container {
+  margin-top: 2rem;
+  background-image: url('/post1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 1600px; /* Limit the maximum width to 1500px */
+  margin: 0 auto; /* Center the container horizontally */
+  width: 100%; /* Ensure it takes up full width until the max-width */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Content container for the category section */
+.category-content {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  max-width: 100%; /* Ensure content doesn’t overflow */
+}
+
+/* Title styling */
+.category-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Subheading styling */
+.category-subheading {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Flexbox container for arranging the category cards */
+.category-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  flex-wrap: wrap; /* Ensure cards wrap if they don't fit in one line */
+  width: 100%; /* Ensure cards container takes full width */
+  max-width: 1300px; /* Ensure a maximum width for the card container */
+  margin: 0 auto; /* Center cards container */
+}
+
+/* Media query for responsive design (adjust spacing on larger screens) */
+@media (min-width: 768px) {
+  .category-cards-container {
+    gap: 4rem;
+  }
+}

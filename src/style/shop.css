@@ -1,0 +1,100 @@
+/* General Styles */
+.shop-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .shop-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .shop-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: auto;
+  }
+  
+  .shop-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: serif;
+  }
+  
+  .shop-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .shop-button {
+    background-color: #046883;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  
+  .shop-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 640px) {
+    .shop-heading {
+      font-size: 1.5rem;
+    }
+  
+    .shop-description {
+      font-size: 1rem;
+    }
+  
+    .shop-overlay {
+      padding: 15px;
+      width: 300px;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 1600px) {
+    .shop-heading {
+      font-size: 2rem;
+    }
+  
+    .shop-description {
+      font-size: 1rem;
+    }
+  
+    .shop-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+
+    .shop-overlay {
+      padding: 20px;
+      width: 400px;
+      height: auto;
+    }
+  }
+  

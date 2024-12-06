@@ -1,0 +1,37 @@
+/* Feature.css */
+
+/* Container for the features section */
+.feature-container {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; /* Center the container horizontally */
+  width: 100%;
+  max-width: 1600px; /* Limit the max width for large screens */
+}
+
+/* Grid layout for responsive design */
+.feature-grid {
+  display: grid;
+  gap: 1rem; /* Gap between the items */
+  grid-template-columns: repeat(1, 1fr); /* Default for small screens */
+  justify-items: center; /* Center the grid items horizontally */
+  width: 100%; /* Ensures grid takes full width inside container */
+  max-width: 1600px; /* Prevents the grid from stretching beyond the container's width */
+}
+
+/* Medium screen layout */
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 2rem; /* Increased gap between items */
+  }
+}
+
+/* Large screen layout */
+@media (min-width: 1024px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    gap: 2rem; /* Gap between items on large screens */
+  }
+}

@@ -1,0 +1,85 @@
+/* Cart.css */
+
+/* Overlay background for the cart */
+.cart-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 20;
+    overflow-y: scroll;
+  }
+  
+  /* Container for the cart content */
+  .cart-container {
+    max-width: 400px;
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 24px;
+  }
+  
+  /* Close icon for the cart */
+  .cart-close-icon {
+    color: #046883;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Cart header styling */
+  .cart-header {
+    padding-left: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #046883;
+    text-transform: uppercase;
+  }
+  
+  /* Styling for the cart product list */
+  .cart-product-list {
+    margin-top: 24px;
+    justify-content: space-between 8px;
+    color: #046883;
+  }
+  
+  /* Styling for the total price section */
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #046883;
+  }
+  
+  /* Styling for the action buttons */
+  .cart-action-button {
+    background-color: #046883;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+    padding: 12px 0;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Hover effect for action buttons */
+  .cart-action-button:hover {
+    background-color: transparent;
+    color: #046883;
+    border: 1px solid #046883 ;
+    transition:transform 0.3s ease-in-out;
+  }
+  

@@ -1,0 +1,56 @@
+/* blogSection.css */
+
+/* Container styling for the entire block section */
+.block-section-container {
+  padding-top: 8rem; /* Adjusts the top padding */
+  text-align: center;
+  max-width: 1600px; /* Ensures the container doesn't exceed the screen size */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 1rem; /* Adds side padding for smaller screens */
+  display: flex; /* Flexbox to center the content */
+  flex-direction: column; /* Align items in column */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-color: #f9f7f7;
+}
+
+/* Title styling */
+.block-section-title {
+  font-size: 2rem; /* Larger, bold font for the section title */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Description styling */
+.block-section-description {
+  color: #6b7280; /* Light gray text */
+  max-width: 600px; /* Centers description and restricts its width */
+  margin: 0 auto; /* Center aligns */
+  margin-bottom: 2rem; /* Adds space below the description */
+  font-size: 1rem;
+}
+
+/* Grid styling for the blog cards */
+.blog-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 2rem; /* Space between cards */
+  justify-content: center; /* Centers the cards within the grid */
+  width: 100%; /* Ensures full width until the max-width */
+  max-width: 1500px; /* Ensures grid doesn't exceed the container's max width */
+  margin: 0 auto; /* Center grid horizontally */
+}
+
+/* BlogCard component adjustments (if needed for additional tweaks) */
+.blog-card {
+  border: 1px solid #e5e7eb; /* Light border for each card */
+  border-radius: 0.5rem; /* Rounds the corners */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  background-color: #fff; /* White background for cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.blog-card:hover {
+  transform: translateY(-0.5rem); /* Lifts the card on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow on hover */
+}
